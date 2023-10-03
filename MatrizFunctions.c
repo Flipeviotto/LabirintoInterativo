@@ -12,8 +12,7 @@ char * CriaMatriz(int * lin, int * col){ //baixar o conteudo da matriz
     }
     
     fscanf(arq,"%d", lin); 
-    *col = *lin;
-    *lin = *lin -1;
+    *col = *lin+1;
 
     char c;
     char * mat = malloc(sizeof(char*)* (*col) * (*lin));
